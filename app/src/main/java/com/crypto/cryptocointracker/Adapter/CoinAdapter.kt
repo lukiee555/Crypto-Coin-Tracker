@@ -4,6 +4,7 @@ import android.app.Activity
 import android.graphics.Color
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -85,6 +86,11 @@ class CoinAdapter(recyclerView: RecyclerView, internal var activity: Activity,va
                 .load(StringBuilder(Common.imageUrl).append(coinModel.symbol!!.toLowerCase())
                         .append(".png")
                         .toString()).into(item.coinIcon)
+
+        Log.d("URl",StringBuilder(Common.imageUrl).append(coinModel.symbol!!.toLowerCase())
+                .append(".png")
+                .toString())
+
 
         //set color
         item.onHourChange.setTextColor(if (coinModel.percent_change_1h!!.contains("-"))

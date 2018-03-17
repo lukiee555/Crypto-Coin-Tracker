@@ -5,7 +5,7 @@ package com.crypto.cryptocointracker.Common
  */
 
 object Common{
-    var imageUrl = "https://res.cloudinary.com/dxi90kson/image/upload/"
+    var imageUrl = "http://res.cloudinary.com/lukiee555/image/upload/v1521291083/"
 
     var MAX_COIN_LOAD = 1000
 }
